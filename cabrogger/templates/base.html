@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+  {% block extra_head %}
+  {% endblock extra_head %}
+  </head>
+  <body>
+    {% comment %}
+    TODO: figure out what else goes in our standard base.html
+    Bootstrap?  HTML5 Boilerplate? Our own style base?
+    JQuery?
+    additional blocks?
+    {% endcomment %}
+    {% block content %}
+      Base template. Not much to see here.
+    {% endblock content %}
+  </body>
+</html>
