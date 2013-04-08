@@ -1,5 +1,5 @@
 import subprocess, signal
-
+import os
 p = subprocess.Popen(['ps', '-A'], stdout=subprocess.PIPE)
 
 out, err = p.communicate()
